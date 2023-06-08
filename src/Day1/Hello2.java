@@ -18,7 +18,7 @@ public class Hello2 {
   public static void main(String[] args) {
     System.out.println("Hello World");
     sum(10,20);
-    sum2(30,40);
-
+    int result = sum2(30,40);
+    System.out.println("result=" + result);
   }
 }
