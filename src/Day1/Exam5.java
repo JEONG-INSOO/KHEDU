@@ -14,7 +14,7 @@ public class Exam5 {
     System.out.print("수학점수 : ");
     int math = Integer.valueOf(scanner.nextLine());
 
-    int sum = kor + eng + math; // 점수 총계
+    int sum = kor + eng + math; // 점수 합계
     double avg = (double)sum/3; // 점수 평균
 
 //    System.out.println("국어점수: " + kor);
