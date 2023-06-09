@@ -46,19 +46,19 @@ public class RockGAME {
 //        break;
 //
 //    String
-//        USERCHOICE = null;
-//  switch (USER){
+//        userCHOICE = null;
+//  switch (user){
 //      case 1:
-//        USERCHOICE = "가위";
+//        userCHOICE = "가위";
 //        break;
 //      case 2:
-//        USERCHOICE = "바위";
+//        userCHOICE = "바위";
 //        break;
 //      case 3:
-//      USERCHOICE = "보";
+//      userCHOICE = "보";
 //      break;
 //      System.out.println("컴퓨터 : " + COMCHOICE);
-//      System.out.println("나 :" + USERCHOICE);        switch (result) {
+//      System.out.println("나 :" + userCHOICE);        switch (result) {
 //        case 0: // 비김
 //          System.out.println("비겼습니다");
 //          break;
