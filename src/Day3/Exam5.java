@@ -61,7 +61,32 @@ public class Exam5 {
       System.out.println();
     }
   }
+  
+    public static void printstar6() {
+      int num = 10;
+      for (int i = 0; i < num; i++) {
+        for (int j = 0; j <i ; j++) {
+          System.out.print(" ");
+        }
+        for (int j = 2*num-1; j > 2*i; j--) {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
+    }
 
+  public static void printstar7() {
+    int num = 10;
+    for (int i = 0; i < num; i++) {
+      for (int j = num-1; j > i ; j--) {
+        System.out.print(" ");
+      }
+      for (int j = 0; j < 2*i+1; j++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
   public static void main(String[] args) {
 
     printstar1();
@@ -73,5 +98,9 @@ public class Exam5 {
     printstar4();
     System.out.println();
     printstar5();
+    System.out.println();
+    printstar6();
+    System.out.println();
+    printstar7();
   }
 }
