@@ -24,8 +24,8 @@ public class Exam7 {
       System.out.println("미");
     } else if (kor >= 60) {
       System.out.println("양");
-  } else {
+    } else {
       System.out.println("가");
-   }
+    }
   }
 }

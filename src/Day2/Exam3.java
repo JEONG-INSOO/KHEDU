@@ -17,7 +17,7 @@ public class Exam3 {
     switch (Day){
       case "월요일":
         System.out.println("1");
-      break;
+        break;
       case "화요일":
         System.out.println("2");
         break;

@@ -16,7 +16,7 @@ public class Exam10 {
       System.out.println("3배수 아니다");
     }
 
-      String result = (num % 3 == 0 ) ? "3의 배수" : "3배수 아니다";
-      System.out.println(result);
+    String result = (num % 3 == 0 ) ? "3의 배수" : "3배수 아니다";
+    System.out.println(result);
   }
 }

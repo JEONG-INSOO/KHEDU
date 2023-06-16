@@ -49,9 +49,9 @@ public class Exam3 {
       System.out.println("홀수합:" + sum);
 
       for (int i = num; i < num2; i++) {
-          sum += i;
-          i += 1;
-        }
+        sum += i;
+        i += 1;
+      }
       System.out.println("총합:" + sum);
     }
     System.out.println("프로그램 종료");

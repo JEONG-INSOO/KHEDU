@@ -61,19 +61,19 @@ public class Exam5 {
       System.out.println();
     }
   }
-  
-    public static void printstar6() {
-      int num = 10;
-      for (int i = 0; i < num; i++) {
-        for (int j = 0; j <i ; j++) {
-          System.out.print(" ");
-        }
-        for (int j = 2*num-1; j > 2*i; j--) {
-          System.out.print("*");
-        }
-        System.out.println();
+
+  public static void printstar6() {
+    int num = 10;
+    for (int i = 0; i < num; i++) {
+      for (int j = 0; j <i ; j++) {
+        System.out.print(" ");
       }
+      for (int j = 2*num-1; j > 2*i; j--) {
+        System.out.print("*");
+      }
+      System.out.println();
     }
+  }
 
   public static void printstar7() {
     int num = 10;

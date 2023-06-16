@@ -19,17 +19,17 @@ public class Exam8 {
       System.out.println("6의 배수가 아니다");
       //value 값은 2의 배수이거나 3의 배수인가?
     }
-      if (value % 2 == 0 || value % 3 == 0) {
-        System.out.println("2or3의 배수다");
-      } else {
-        System.out.println("2 or 3의 배수가 아니다");
-      }
+    if (value % 2 == 0 || value % 3 == 0) {
+      System.out.println("2or3의 배수다");
+    } else {
+      System.out.println("2 or 3의 배수가 아니다");
+    }
 
-        boolean result = value % 2 == 0 || value % 3 == 0;
-        System.out.println("result=" + result);
+    boolean result = value % 2 == 0 || value % 3 == 0;
+    System.out.println("result=" + result);
 
-        boolean flag2 = false;
-        boolean result2 = !flag2;
+    boolean flag2 = false;
+    boolean result2 = !flag2;
     System.out.println("result2=" +result2);
   }
 }

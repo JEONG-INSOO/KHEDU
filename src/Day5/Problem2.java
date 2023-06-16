@@ -33,41 +33,76 @@ score[3] = 80
 import java.util.Scanner;
 
 public class Problem2 {
-
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-
-    // 초기화면
-    System.out.println("------------------------------------------------------");
-    System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
-    System.out.println("------------------------------------------------------");
-
-    // 무한루프
+    int students = 0;
+    int score[] = null;
     boolean powerOff = false;
     while (!powerOff) {
-      // 선택
-      System.out.print("선택 >> ");
-      String choice = scanner.nextLine();
-      int num = Integer.parseInt(choice);
+      // 초기 화면
+      System.out.println("------------------------------------------------------");
+      System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+      System.out.println("------------------------------------------------------");
+      System.out.printf("선택 >> ");
+      int choice = scanner.nextInt();
+      switch (choice) {
 
-      // 학생 수 선택
+        //1. 학생수
+        case 1:
+          System.out.printf("학생수 > ");
+          students = scanner.nextInt();
+          score = new int[students];
 
-      if (num == 1) {
-        System.out.println(" 학생 수를 입력하세요.");
-        String studentNum = scanner.nextLine();
-        int studentNum2 = Integer.parseInt(studentNum);
+          break;
+        //2. 점수 입력
+        case 2:
+          if (score == null) {
+            System.out.println("학생 수를 먼저 입력 바랍니다.");
+            continue;
+          }
+          for (int i = 0; i < score.length; i++) {
+            System.out.printf("점수" + (i + 1) + "> ");
+            score[i] = scanner.nextInt();
+          }break;
 
-        int[][] arr = new int[studentNum2][];
-      }
+        //3. 점수 리스트
+        case 3:
+          if (score == null) {
+            System.out.println("학생 수를 먼저 입력 바랍니다.");
+            continue;
+          }
+          for (int i = 0; i < score.length; i++) {
+            System.out.println("score["+ i +"] = " + score[i]);
+          }break;
 
+        //4. 분석
+        case 4:
+          if (score == null) {
+            System.out.println("학생 수를 먼저 입력 바랍니다.");
+            continue;
+          }
+          int best = 0;
+          int sum = 0;
+          double avg = 0;
 
-      boolean innertstop = false;
-//      while(!innertstop){
-//        System.out.println(j++);
-//        // j값이 10일 때 제일 바깥쪽 while 문 빠져나오기
-//        if (j == 10) {
-//          innertstop = true;
-//          outerstop = true;
-        }
+          for (int i = 0; i < score.length; i++) {
+            best = (best < score[i] ? score[i] : best);
+            sum = sum + score[i];
+          }
+          avg = (double) sum/students;
+          System.out.println("최고점수 = " + best);
+          System.out.println("평균점수 = " + avg);
+          break;
+
+          //5. 종료
+        case 5:
+          powerOff = true;
+          System.out.println("프로그램 종료!!");
+          break;
+        default :
+          System.out.println("1~5로 고르시오");
       }
     }
+  }
+}
+

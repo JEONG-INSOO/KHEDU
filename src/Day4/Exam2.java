@@ -21,9 +21,9 @@ public class Exam2 {
     for (int i = 0; i < subject4.length; i++) {
       System.out.println(subject4[i]);*/
 
-    int[] subject5;
-    subject5 = new int[]{1,2,3};  // 배열 선언과 생성을 분리해서 작성할 수 있다.
-    // subject5 = {1,2,3}; 배열 선언과 생성을 분리해서 작성할 수 없다.
-      }
+      int[] subject5;
+      subject5 = new int[]{1,2,3};  // 배열 선언과 생성을 분리해서 작성할 수 있다.
+      // subject5 = {1,2,3}; 배열 선언과 생성을 분리해서 작성할 수 없다.
     }
   }
+}

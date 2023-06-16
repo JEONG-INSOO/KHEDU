@@ -12,16 +12,16 @@ public class for2 {
     System.out.println(">> 구구단 프로그램<<");
     for (; ; ) {
 
-    System.out.print(">>단수: ");
-    String dansu = scanner.nextLine();
+      System.out.print(">>단수: ");
+      String dansu = scanner.nextLine();
 
       if (dansu.equalsIgnoreCase("X")) {
         break;  // 가장 가까운 반복문을 빠져나온다.
       }
-    int num = Integer.parseInt(dansu);
+      int num = Integer.parseInt(dansu);
 
-    for (int i = 1; i <= 9 ; i++) {
-      System.out.println(num + "*" + i + "=" + (num * i));
+      for (int i = 1; i <= 9 ; i++) {
+        System.out.println(num + "*" + i + "=" + (num * i));
       }
     }
     System.out.println("프로그램 종료");

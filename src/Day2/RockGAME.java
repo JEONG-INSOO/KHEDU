@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class RockGAME {
   public static void main(String[] args) {
-   // 컴퓨터 값 랜덤 추출
+    // 컴퓨터 값 랜덤 추출
     int com = (int)(Math.random() * 3) + 1;
 
-   // 사용자 값 입력
+    // 사용자 값 입력
     Scanner scanner = new Scanner(System.in);
     System.out.print("가위 (1) , 바위 (2) , 보 (3) 선택 :");
     String value1 = scanner.nextLine();
     int user = Integer.valueOf(value1);
 
-   // 판단
+    // 판단
     System.out.println("컴퓨터의 선택: " + com);
     int result; // user 기준 0: 비김 1: 이김 2: 짐
     //비김
@@ -25,7 +25,7 @@ public class RockGAME {
     if (user == 1 && com == 3 || user == 2 && com == 1 || user == 3 && com == 2){
       result = 1;
       System.out.println("당신이 이겼습니다.");
-    //짐
+      //짐
     } else if (user == 2 && com == 3 || user == 1 && com == 2 || user ==3 && com == 1) {
       result = 2;
       System.out.println("당신이 졌습니다.");

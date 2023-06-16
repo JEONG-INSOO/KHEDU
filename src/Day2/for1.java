@@ -21,7 +21,7 @@ public class for1 {
     int sum3 = 0;
     for (int j = 1; j <=100 ; j++) {
       sum3 = sum3 + j;
-      }
+    }
     System.out.println("sum3 = " + sum3);
 
     Scanner scanner = new Scanner(System.in);

@@ -21,20 +21,20 @@ public class Lotto {
       int num = 0;
 
       while(!stop){
-      // 1) 번호 추출
-      num = (int)(Math.random()*45)+1;
+        // 1) 번호 추출
+        num = (int)(Math.random()*45)+1;
 
-      // 2) 중복 체크
-      boolean isDup = false;
-      for (int j = 0; j < i; j++) {
-        if (lotto[j] == num) {
-          isDup = true;
-          dupCnt++;
-          System.out.printf("중복 숫자 [%d] %d \n", j, num);
-          break;
+        // 2) 중복 체크
+        boolean isDup = false;
+        for (int j = 0; j < i; j++) {
+          if (lotto[j] == num) {
+            isDup = true;
+            dupCnt++;
+            System.out.printf("중복 숫자 [%d] %d \n", j, num);
+            break;
           }
         }
-      // #) 중복이 없는 경우 stop = true
+        // #) 중복이 없는 경우 stop = true
         if(!isDup) stop = true;
       }
       lotto[i] = num;
