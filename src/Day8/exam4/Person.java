@@ -1,8 +1,6 @@
 package Day8.exam4;
-import java.lang.*;
-public class Person {
-
 // java.lang 패키지에 포함된 모든 클래스를 가져다 사용하겠다.
+import java.lang.*;
 
 // 모든 클래스의 최상위 부모는 Object
 public class Person extends Object{
@@ -11,4 +9,4 @@ public class Person extends Object{
   Person(){
     super(); // 부모클래스의 기본 생성자 호출
   }
-}}
+}
