@@ -23,7 +23,7 @@ public class Exam2 {
     while (i <= 10) {
       if (i % 2 == 0)
         sum += i;
-        i++;
+      i++;
     }
     System.out.println("sum = " + sum);
   }
@@ -33,7 +33,7 @@ public class Exam2 {
     do {
       if (i % 2 == 0)
         sum += i;
-        i++;
+      i++;
     }
     while (i <= 10) ;
 

@@ -43,6 +43,5 @@ public class DoWhileControlStatement {
       System.out.print(a + " ");
       a++;
     } while (a < 10);
-    }
   }
-
+}
