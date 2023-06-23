@@ -40,16 +40,16 @@ public class TriangleDriver {
             c = triangle1.side3;
 
             if ( a == b || b == c || c == a) {
-                System.out.println(triangle1.is_isosceles());
+                System.out.println(triangle1.isIsosceles());
                 break;
             } else if (a * a + b * b == c * c) {
-                System.out.println(triangle1.is_right());
+                System.out.println(triangle1.isRight());
                 break;
             } else if (a * a + c * c == b * b) {
-                System.out.println(triangle1.is_right());
+                System.out.println(triangle1.isRight());
                 break;
             } else if (b * b + c * c == a * a) {
-                System.out.println(triangle1.is_right());
+                System.out.println(triangle1.isRight());
                 break;
             } else
                 System.out.println("이등변 삼각형, 직각삼각형에 해당하지 않습니다.");
@@ -61,16 +61,16 @@ public class TriangleDriver {
             c = triangle2.side3;
 
             if (a == b || b == c || c == a){
-                System.out.println(triangle2.is_isosceles());
+                System.out.println(triangle2.isIsosceles());
                 break;
             }else if (a * a + b * b == c * c) {
-                System.out.println(triangle2.is_right());
+                System.out.println(triangle2.isRight());
                 break;
             } else if (a * a + c * c == b * b) {
-                System.out.println(triangle2.is_right());
+                System.out.println(triangle2.isRight());
                 break;
             } else if (b * b + c * c == a * a) {
-                System.out.println(triangle2.is_right());
+                System.out.println(triangle2.isRight());
                 break;
             } else
                 System.out.println("이등변 삼각형, 직각삼각형에 해당하지 않습니다.");
@@ -82,16 +82,16 @@ public class TriangleDriver {
             c = triangle3.side3;
 
             if (a == b || b == c || c == a){
-                System.out.println(triangle3.is_isosceles());
+                System.out.println(triangle3.isIsosceles());
                 break;
             }else if (a * a + b * b == c * c) {
-                System.out.println(triangle3.is_right());
+                System.out.println(triangle3.isRight());
                 break;
             } else if (a * a + c * c == b * b) {
-                System.out.println(triangle3.is_right());
+                System.out.println(triangle3.isRight());
                 break;
             } else if (b * b + c * c == a * a) {
-                System.out.println(triangle3.is_right());
+                System.out.println(triangle3.isRight());
                 break;
             } else
                 System.out.println("이등변 삼각형, 직각삼각형에 해당하지 않습니다.");

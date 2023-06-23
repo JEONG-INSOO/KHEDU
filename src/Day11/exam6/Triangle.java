@@ -23,11 +23,11 @@ public class Triangle {
         this.side3 = side3;
     }
 
-    public String is_right() {
+    public String isRight() {
         return "직각삼각형 입니다.";
     }
 
-    public String is_isosceles() {
+    public String isIsosceles() {
         return "이등변삼각형입니다.";
     }
 }

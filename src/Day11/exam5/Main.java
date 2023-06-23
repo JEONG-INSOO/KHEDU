@@ -34,6 +34,5 @@ public class Main {
         for (int i = 0; i < dice.length; i++) {
             System.out.print(dies[i].getFaceValue()+" / " );
         }
-
     }
 }
