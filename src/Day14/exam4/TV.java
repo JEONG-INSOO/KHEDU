@@ -1,0 +1,7 @@
+package Day14.exam4;
+
+public class TV implements OnOff {
+  public void on() {
+    System.out.println("TV를 켜다");
+  }
+}
