@@ -29,7 +29,7 @@ import java.util.Scanner;
 public class ClassRollDriver {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    Student2 student = null;    // 학생 객체
+    student2 student = null;    // 학생 객체
     String coursename = null;   // 교과목명
     String name = null;         // 추가하는 학생의 이름
     String number = null;       // 추가하는 학생의 학번
@@ -53,7 +53,7 @@ public class ClassRollDriver {
         case 1 :
           System.out.print("학번 >> "); number = scanner.nextLine();
           System.out.print("이름 >> "); name = scanner.nextLine();
-          student = new Student2(number,name);
+          student = new student2(number,name);
           classRoll.add(student);
           System.out.println(classRoll);
           break;

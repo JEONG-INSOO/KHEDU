@@ -6,7 +6,7 @@ public class Main {
     student s = new student();
 
     // 상위 타입은 하위 타임을 참조할 수 있다.
-    Person p = new student();
+    Person p1 = new student();
 
     //하위 타입은 상위 타입을 참조할 수 없다.
     //student2 s = new Person();

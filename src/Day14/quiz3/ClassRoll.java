@@ -1,27 +1,27 @@
 package Day14.quiz3;
-/*
-(b) ClassRoll 클래스 설계
-	1. 변수들
-	sbook: Student 객체들의 배열
-	coursename: 교과목명
-	size: 출석부의 크기
-	count: 출석부에 있는 사람들의 수
+//(b) ClassRoll 클래스 설계
+//	1. 변수들
+//	sbook: Student 객체들의 배열
+//	coursename: 교과목명
+//	size: 출석부의 크기
+//	count: 출석부에 있는 사람들의 수
+//
+//2. 메소드
+//	생성자메소드: 크기가 30인 빈 출석부 객체를 생성한다
+//	setCourseName: 교과목명을 주어진 값으로 변경한다
+//	getCourseName: 교과목명을 반환한다
+//	add: 한 Student 객체를 출석부에 추가한다
+//	findIndex: 주어진 Student 객체의 출석부내의 위치(index)를 알려 준다
+//	delete: 주어진 Student 객체를 출석부에서 삭제한다
+//	search: 주어진 Student 객체를 출석부에서 찾아서 출석를 알려준다
+//	toString: 출석부의 모든 정보를 알려 준다
 
-2. 메소드
-	생성자메소드: 크기가 30인 빈 출석부 객체를 생성한다
-	setCourseName: 교과목명을 주어진 값으로 변경한다
-	getCourseName: 교과목명을 반환한다
-	add: 한 Student 객체를 출석부에 추가한다
-	findIndex: 주어진 Student 객체의 출석부내의 위치(index)를 알려 준다
-	delete: 주어진 Student 객체를 출석부에서 삭제한다
-	search: 주어진 Student 객체를 출석부에서 찾아서 출석를 알려준다
-	toString: 출석부의 모든 정보를 알려 준다
-*/
+
 import java.util.Arrays;
 
 public class ClassRoll {
 
-  private Student2[]	sbook;    // Student 객체들의 배열
+  private student2[]	sbook;    // Student 객체들의 배열
   private String	coursename;   // 교과목명
   private final int	size = 30;  // 출석부의 크기
   private int	count;            // 출석부에 있는 사람들의 수
@@ -30,7 +30,7 @@ public class ClassRoll {
 //	생성자메소드: 크기가 30인 빈 출석부 객체를 생성한다
 
   public ClassRoll() {
-    sbook = new Student2[size];
+    sbook = new student2[size];
   }
 
   //	setCourseName: 교과목명을 주어진 값으로 변경한다
@@ -43,7 +43,7 @@ public class ClassRoll {
   }
 
   //	add: 한 Student 객체를 출석부에 추가한다
-  public void add(Student2 student){
+  public void add(student2 student){
     sbook[count] = student;
     count++;
   }
